@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FUNBOX 玩盒 · 在线趣味工具箱</title>
+<meta name="description" content="8 件纯本地运行的在线小工具：密码制造、配色生成、占位文、Markdown 笔记、文本加工、番茄钟、帮我决定、图片压缩。免费免注册。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='2' fill='%23141414'/%3E%3Ctext x='16' y='24' font-family='Arial Black' font-size='22' font-weight='900' fill='%23ffd400' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 顶部跑马灯 -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<div class="shell">
+
+  <!-- 左侧工具栏（应用式布局，区别于前两站的顶部导航） -->
+  <aside class="sidebar">
+    <a class="brand" href="#/">
+      <span class="brand-mark">F</span>
+      <span class="brand-name">FUN<em>BOX</em><small>玩盒工具箱</small></span>
+    </a>
+    <p class="side-note">// 8 件趁手小工具，全部在你浏览器里干活</p>
+    <nav class="sidenav" id="sidenav" aria-label="工具导航"></nav>
+    <div class="side-foot">
+      <span class="sticker yellow">FREE</span>
+      <span class="sticker pink">NO&nbsp;SERVER</span>
+      <span class="sticker blue">OFFLINE&nbsp;OK</span>
+    </div>
+  </aside>
+
+  <!-- 右侧工作区 -->
+  <main class="main">
+    <div id="app"></div>
+    <footer class="foot">
+      <span>FUNBOX 玩盒 — 纯本地运行的小工具合集</span>
+      <span>所有数据均不离开你的浏览器</span>
+    </footer>
+  </main>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
